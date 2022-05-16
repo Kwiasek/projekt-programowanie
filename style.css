@@ -1,0 +1,395 @@
+:root {
+    --clr-primary: #2E5EAA;
+    --clr-secondary: #fff;
+    --header-img: url(img/background.jpg);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+/* Nagłówek */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--clr-primary)), var(--header-img);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.head-text {
+    padding-top: 300px;
+}
+
+.head-text h1 {
+    color: var(--clr-secondary);
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+}
+
+.head-text h3 {
+    color: var(--clr-secondary);
+}
+
+@media screen and (max-width: 770px) {
+    .head-text {
+        padding-top: 200px;
+    }
+
+    .head-text h1 {
+        font-size: 3rem;
+    }
+    
+}
+
+.head-button {
+    margin: 70px auto 0;
+}
+
+.head-button a {
+    width: 220px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: var(--clr-secondary);
+    border: .5px solid var(--clr-secondary);
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.head-button a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-secondary);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.head-button a:hover span {
+    width: 100%;
+}
+
+.head-button a:hover {
+    color: #000;
+}
+
+/* Przycisk nagłówka */
+.scroll-btn {
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid var(--clr-secondary);
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+
+.scroll-bar span {
+    border: 2px solid var(--clr-secondary);
+    font-size: 10px;
+    border-radius: 30px;
+}
+
+.scroll-bar {
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+/* Pasek nawigacji */
+nav {
+    background: var(--clr-primary);
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+.nav-bar {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+.navbar-brand {
+    color: var(--clr-secondary) !important;
+    transition: 0.3s;
+}
+
+.navbar a {
+    color: var(--clr-secondary) !important;
+}
+
+.navbar a:visited {
+    color: var(--clr-secondary) !important;
+}
+
+.navbar a:hover {
+    color: #dedede !important;
+}
+
+.navbar-brand:hover {
+    color: #777 !important;
+}
+
+.navbar-toggler-icon:focus {
+    outline: none;
+}
+
+.gold {
+    background: -webkit-linear-gradient(#edbb5f, #b9984e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+/* Sekcja o firmie */
+
+#about {
+    background: #f7f7f7;
+    padding: 100px 0 100px 0;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    
+}
+
+h2::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(var(--clr-primary),var(--clr-secondary));
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+#about p {
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+
+#about img {
+    border-radius: 10px;
+}
+
+#about img:hover {
+    transform: translateX(-20px);
+    transition: 0.5s;
+}
+
+/* Sekcja serwis */
+
+#serwis {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/serwis.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--clr-secondary);
+    padding: 100px 0 100px 0;
+}
+
+#serwis h2::after {
+    background: linear-gradient(var(--clr-primary),#000);
+}
+
+.service {
+    margin-top: 25px;
+}
+
+.service p {
+    padding-top: 13px;
+}
+
+.service i {
+    float: left;
+    font-size: 2em;
+    background: var(--clr-primary);
+    color: var(--clr-secondary);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.service i:hover {
+    background: var(--clr-secondary);
+    color: var(--clr-primary);
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+
+
+/* Stacja kontroli pojazdów */
+
+#stacja {
+    padding: 100px 0 100px 0;
+}
+
+.opis {
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+
+.rodzaj p {
+    margin-bottom: 25px;
+    max-width: 470px;
+}
+
+.rodzaj-lit {
+    font-size: 2em;
+    color: var(--clr-secondary);
+    background: var(--clr-primary);
+    padding: 10px;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    display: inline;
+    font-style: normal;
+}
+
+.stacja-img {
+    border-radius: 10px;
+}
+
+.stacja-img:hover {
+    transform: translateX(-15px);
+    transition: 0.5s;
+}
+
+#stacja table {
+    border-collapse: collapse;
+}
+
+#stacja td {
+    padding: 15px;
+}
+
+
+/* OLS Customs */
+
+#olscustoms {
+    padding: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/olscustoms.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--clr-secondary);
+}
+
+#olscustoms h2::after{
+    background: linear-gradient(#b9984e,#000);
+}
+
+
+/* Mapa */
+
+#mapa {
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+
+iframe {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Kontakt */
+#kontakt {
+    margin: 0 !important;
+    padding: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/kontakt.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--clr-secondary);
+}
+
+#kontakt h2::after{
+    background: linear-gradient(var(--clr-primary),#000);
+}
+
+.box {
+    border: 1px solid var(--clr-secondary);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+/* Stopka */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-primary);
+    height: 60px;
+    width: 100%;
+    color: var(--clr-secondary);
+    font-size: 1.2em;
+}
+
+/* projekt */
+#red {
+    background-color: red;
+    color: black;
+}
+
+#blue {
+    background-color: blue;
+    color: var(--clr-secondary);
+}
+
+#black {
+    background-color: black;
+    color: var(--clr-secondary);
+}
+
+#green {
+    background-color: green;
+    color: var(--clr-secondary);
+}
+
+#yellow {
+    background-color: yellow;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    #car{
+        display: none;
+    }
+}

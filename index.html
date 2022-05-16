@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olech-Service</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <!-- Nagłówek -->
+    <header id="header">
+        <i class="fas fa-car-side" id="car" style=" font-size: 4rem; color: var(--clr-secondary); text-align:left; position: absolute; bottom: 100px; left: 10px;"></i>
+
+        <section class="container text-center">
+            <section class="col-12 head-text">
+                <h1>Olech-Service</h1>
+            </section>
+            <section class="col-12 head-button">
+                <a href="#serwis"><span></span>Serwis</a>
+                <a href="#stacja"><span></span>Stacja kontroli pojazdów</a>
+            </section>
+        </section>
+        <section class="scroll-btn" id="scroll-btn">
+            <section class="scroll-bar">
+                <a href="#about"><span></span></a>
+            </section>
+        </section>
+    </header>
+    <main>
+        <!-- Nawigacja -->
+        <section class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <section class="container-fluid">
+                    <a class="navbar-brand" href="#header">Olech-Service</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">O firmie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#serwis">Serwis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#stacja">Stacja kontroli pojazdów</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link gold font-weight-bold" href="#olscustoms">OLS Customs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mapa">Mapa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kontakt">Kontakt</a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </nav>
+        </section>
+
+        <!-- O firmie -->
+        <section id="about">
+            <section class="container">
+                <section class="row">
+                    <h2 class="text-bold mb-3">O firmie</h2>
+                    <section class="col-lg-6">
+                        <img src="img/pic1.jpg" alt="Saab'y" class="img-fluid">
+                    </section>
+                    <section class="col-lg-6">
+                        <p class="mt-3 mt-lg-0">
+                            Spółka rozpoczęła swą działalność w 1976 roku. Jesteśmy firmą rodzinną, której założycielem
+                            jest Andrzej Kwiasowski, człowiek wielkiego serca i otwartego umysłu. Jako pierwsi w
+                            Centralnej Polsce rozpoczęliśmy współprace z cenioną na całym Świecie marką samochodów
+                            osobowych Saab i od 1999 jesteśmy autoryzowaną stacją obsługi tejże marki w Polsce.
+                            Wieloletnie doświadczenie i wszechstronna wiedza przekazana nam przez założyciela firmy
+                            obecnie stanowi podstawę naszego rozwoju i daje możliwość kontynuowania jego dzieła. Wiele
+                            lat wspólnej pracy zaowocowała pokaźnym gronem zadowolonych klientów, darzących nas
+                            zaufaniem i ceniących sobie nasz profesjonalizm.
+                        </p>
+                    </section>
+                </section>
+                <section class="row mt-5">
+                    <section class="col-lg-6">
+                        <h3 class="ms-auto">W trosce o komfort klientów...</h3>
+                        <p>Przygotowaliśmy specjalne miejsce, tak by czas spędzony w naszym warsztacie mijał w
+                            przyjemnej atmosferze. Specjalnie dla Państwa przygotowaliśmy bogatą ofertę prasy,
+                            motoryzacyjnej jak i popularnonaukowej wraz z kącikiem kawowym.</p>
+                    </section>
+                    <section class="col-lg-6">
+                        <img src="img/pic2.jpg" alt="Salon" class="img-fluid">
+                    </section>
+                </section>
+                <section class="row mt-5">
+                    <section class="col-lg-6">
+                        <img src="img/pic3.jpg" alt="Akcesoria" class="img-fluid">
+                    </section>
+                    <section class="col-lg-6">
+                        <h3 class="ms-auto mt-3 mt-lg-0">Sprzedaż akcesoriów</h3>
+                        <p>Prowadzimy również sprzedaż akcesoriów dodatkowych takich jak wycieraczki, oryginalne
+                            kołpaki, emblematy, żarówki, akcesoria do pielęgnacji wnętrza.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- Serwis -->
+        <section id="serwis">
+            <section class="container">
+                <section class="row">
+                    <h2>Serwis</h2>
+                    <h3>W ramach serwisu oferujemy:</h3>
+                    <section class="col-lg-6">
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Piaskowanie elementów w tym zacisków hamulcowych, felg itp.</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Remonty główne silników, głowic</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Wymiana oleju</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Przeglądy przed zakupem</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Pełną diagnostykę geometrii podwozia</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Naprawy elektryczne i elektroniczne</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Serwis klimatyzacji</p>
+                        </section>
+                    </section>
+                    <section class="col-lg-6">
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Naprawy blacharsko lakiernicze</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Przeglądy okresowe</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Komputerowy test elektroniki pojazdu</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Remonty układów zawieszeń, układów hamulcowych</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Naprawa zawieszenia</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Pełen zakres części i akcesoriów</p>
+                        </section>
+                        <section class="service">
+                            <i class="fas fa-wrench"></i>
+                            <p>Usługi Stacji Kontroli Pojazdów</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- Stacja kontroli pojazdów -->
+
+        <section id="stacja">
+            <section class="container">
+                <section class="row">
+                    <h2>Stacja kontroli pojazdów</h2>
+                    <section class="col-lg-6 mt-3">
+                        <img src="img/stacja.jpg" alt="Stacja kontroli pojazdów" class="container-fluid stacja-img">
+                    </section>
+                    <section class="col-lg-6 mt-3">
+                        <p class="opis">Do państwa dyspozycji oddajemy nowoczesną stację kontroli pojazdów. Dysponujemy
+                            nowoczesnym sprzętem, pełną ścieżkę diagnostyczną, w skład której wchodzą płyty do badania
+                            siły hamowania pojazdów, testery do badania amortyzatorów oraz szarpaki do wykrywania luzów
+                            w zawieszeniu.</p>
+                        <p class="opis">Poza tym dysponujemy wieloma urządzeniami specjalistycznymi zapewniając dobrze i
+                            sprawnie wykonane badanie techniczne pojazdu, którego masa nie przekracza 3.5 tony. Naszym
+                            atutem są przede wszystkim wysoce wykwalifikowani pracownicy. Posiadamy certyfikat Polskiej
+                            Izby Stacji Kontroli Pojazdów. Klientom zapewniamy fachową oraz miłą obsługę. Nowoczesny i
+                            schludny wystrój sprawia, że każdy czuje się jak w domu.</p>
+                    </section>
+                </section>
+                <section class="row mt-4">
+                    <h3 class="text-center">Zakres badań naszej stacji:</h3>
+                    <section class="col-lg-6 mt-2 rodzaj">
+                        <h4>Symbole rodzajów pojazdów:</h4><br>
+                        <table>
+                            <tr>
+                                <td><i class="rodzaj-lit">A</i></td>
+                                <td>Motocykle i motorowery</td>
+                            </tr>
+                            <tr>
+                                <td><i class="rodzaj-lit">B</i></td>
+                                <td>Pojazdy samochodowe o dopuszczalnej masie całkowitej do 3,5 t, z wyłączeniem
+                                    motocykli i motorowerów</td>
+                            </tr>
+                            <tr>
+                                <td><i class="rodzaj-lit">T</i></td>
+                                <td>Ciągniki rolnicze</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="col-lg-6 mt-2 rodzaj">
+                        <h4>Symbole rodzajów badań:</h4><br>
+                        <table>
+                            <tr>
+                                <td><i class="rodzaj-lit">c</i></td>
+                                <td>Pojazdy przystosowane do zasilania gazem </td>
+                            </tr>
+                            <tr>
+                                <td><i class="rodzaj-lit">d</i></td>
+                                <td>Pojazdy zarejestrowane po raz pierwszy za granicą lub pojazdy nowego typu
+                                    wyprodukowane lub importowane w ilości jednej sztuki rocznie</td>
+                            </tr>
+                            <tr>
+                                <td><i class="rodzaj-lit">e</i></td>
+                                <td>Pojazdy skierowane na badania techniczne przez organ kontroli ruchu drogowego lub
+                                    starostę, dla których wymagane jest specjalistyczne badanie, oraz pojazdy, w których
+                                    dokonano zmian konstrukcyjnych lub wymiany elementów powodujących zmianę danych w
+                                    dowodzie rejestracyjnym</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="accordion mt-5" id="accordionExample">
+                        <section class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    UWAGA!
+                                </button>
+                            </h3>
+                            <section id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <section class="accordion-body">
+                                    <p>Badanie techniczne jest przeprowadzane na koszt właściciela lub posiadacza
+                                        pojazdu, w:</p>
+                                    <ol style="list-style-type: lower-latin;">
+                                        <li>okresowego badania technicznego pojazdów o dopuszczalnej masie całkowitej
+                                            nieprzekraczającej 3,5 t, z zastrzeżeniem lit. b,</li>
+                                        <li>badań technicznych przyczep przeznaczonych do łączenia z pojazdami
+                                            określonymi w lit. a, o ile stacja spełnia wymagania, o których mowa w
+                                            przepisach wydanych na podstawie art. 84a ust. 1 pkt 1 ustawy Prawo o ruchu
+                                            drogowym w zakresie długości stanowiska kontrolnego;</li>
+                                        <li>dodatkowych badań technicznych w odniesieniu do pojazdów, o których mowa w
+                                            lit. a, z zastrzeżeniem, że badanie techniczne w zakresie badań co do
+                                            zgodności z warunkami technicznymi autobusu, którego dopuszczalna prędkość
+                                            na autostradzie i drodze ekspresowej wynosi 100 km/h, przewozu towarów
+                                            niebezpiecznych, pojazdu zabytkowego, pojazdu marki „SAM”, pojazdu, w którym
+                                            dokonano zmian konstrukcyjnych lub wymiany elementów powodujących zmianę
+                                            danych w dowodzie rejestracyjnym oraz pojazdu, dla którego określono
+                                            wymagania techniczne w przepisach ustawy z dnia 11 marca 2004 r. o podatku
+                                            od towarów i usług, ustawy z dnia 26 lipca 1991 r. o podatku dochodowym od
+                                            osób fizycznych lub ustawy z dnia 15 lutego 1992 r. o podatku dochodowym od
+                                            osób prawnych, a także dla którego określono dodatkowe wymagania w
+                                            międzynarodowych porozumieniach dotyczących międzynarodowego transportu
+                                            drogowego jest przeprowadzane wyłącznie w okręgowej stacji kontroli
+                                            pojazdów.</li>
+                                        </ul>
+                                        <p>Za wpisanie do dowodu rejestracyjnego przez uprawnionego diagnostę, po
+                                            stwierdzeniu pozytywnego wyniku badania, kolejnego terminu badania
+                                            technicznego pojazdu diagnosta pobiera dodatkowo (oprócz opłaty za
+                                            przeprowadzenie przeglądu technicznego) opłatę ewidencyjną w wysokości - 1
+                                            zł.</p>
+                                        <p>Podstawa prawna:</p>
+                                        <ul>
+                                            <li>ustawa z dnia 20 czerwca 1997 r. Prawo o ruchu drogowym (tekst jednolity
+                                                Dz. U. z 2012 r., poz. 1137, z późn. zm.),</li>
+                                            <li>rozporządzenie Ministra Spraw Wewnętrznych z dnia 15 maja 2015 r. w
+                                                sprawie opłaty ewidencyjnej stanowiącej przychód Funduszu – Centralna
+                                                Ewidencja Pojazdów i Kierowców (Dz. U. z 2015 r., poz. 681),</li>
+                                            <li>rozporządzenie Ministra Transportu, Budownictwa i Gospodarki Morskiej z
+                                                dnia 26 czerwca 2012 r. w sprawie zakresu i sposobu przeprowadzania
+                                                badań technicznych pojazdów oraz wzorów dokumentów stosowanych przy tych
+                                                badaniach (Dz. U. 2015 r., poz. 776, z późn. zm.).</li>
+                                        </ul><br>
+                                        <i>Źródło: Departament Obsługi i Administracji, Wydział Praw Jazdy i Rejestracji
+                                            Pojazdów</i>
+                                </section>
+                            </section>
+                        </section>
+
+                    </section>
+                </section>
+        </section>
+
+        <!-- OLS Customs -->
+
+        <section id="olscustoms">
+            <section class="container">
+                <section class="row">
+                    <h2 class="gold">OLS Customs</h2>
+                    <p>Everything what your car needs!</p>
+                    <div id="hook">Sekcja dla projektu  </div><br><br>
+                    <div id="czas"></div><br><br>
+                    <form>
+                        <label for="kolor">Zmień styl strony</label>
+                    <select name="kolor" id="kolor" class="col-12 col-md-4" onchange="zmienKolor()">
+                        <option value="white" id="white">Wybierz kolor:</option>
+                        <option value="red" id="red">czerwony</option>
+                        <option value="blue" id="blue">niebieski</option>
+                        <option value="black" id="black">czarny</option>
+                        <option value="green" id="green">zielony</option>
+                        <option value="yellow" id="yellow">żółty</option>
+                    </select>
+                    </form>
+                    <form id="czcionka">
+                        <label for="bold">Pogrubiona czcionka</label>
+                        <input type="checkbox" name="bold" id="bold"><br>
+                        <label for="italic">Kursywa</label>
+                        <input type="checkbox" name="italic" id="italic"><br>
+                        <label for="cursed">Przekreślony tekst</label>
+                        <input type="checkbox" name="cursed" id="cursed">
+                    </form>
+                </section>
+            </section>
+        </section>
+
+        <!-- Mapa -->
+        
+        <section id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2471.2213364470317!2d19.535874415778128!3d51.72898687967215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a333e1d78bca1%3A0x99d088c93f790941!2zT2xlY2hvd3NrYSAxMUIsIDkwLTAwMSDFgcOzZMW6!5e0!3m2!1spl!2spl!4v1624840508827!5m2!1spl!2spl"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt">
+            <section class="container">
+                <section class="row">
+                    <h2>Kontakt</h2>
+                    <section class="col-lg-5 d-block">
+                        <section class="box">
+                            <h4>Adres serwisu</h4>
+                            <p>Olech-Service<br>
+                                Olechowska 11B, 92-403 Łódź<br>
+                                tel. (42) 649 22 94<br>
+                                fax (42) 649 22 99<br>
+                                biuro@olechservice.pl</p>
+                        </section>
+                        <section class="box mt-3">
+                            <h4>Godziny pracy serwisu:</h4>
+                            <p>Poniedziałek - Piątek: 9:00 - 18:00<br>
+                                Sobota, Niedziela: nieczynne</p>
+                            <h4>Stacja kontroli pojazdów:</h4>
+                            <p>Poniedziałek - Piątek: 9:00 - 19:00<br>
+                                Sobota: 9:00 - 14:00<br>
+                                Niedziela: nieczynne</p>
+                        </section>
+                    </section>
+
+                    <section class="col-lg-7">
+                        <section class="box">
+                            <h4>
+                                Pozostaw nam dane a skontaktujemy się z tobą </h4>
+                            <section class="contact-form">
+                                <form role="form" method="post">
+                                    <section class="form-group">
+                                        <label for="name">
+                                            Imie i Nazwisko
+                                        </label>
+                                        <input type="text" placeholder="" id="name" name="name" value=""
+                                            class="form-control">
+                                    </section>
+                                    <section class="form-group">
+                                        <label for="email">
+                                            Email
+                                        </label>
+                                        <input type="text" placeholder="" id="email" name="email" value=""
+                                            class="form-control">
+                                    </section>
+                                    <section class="form-group">
+                                        <label for="phone">
+                                            Numer telefonu
+                                        </label>
+                                        <input type="text" id="phone" name="phone" value="" class="form-control">
+                                    </section>
+                                    <section class="form-group">
+                                        <label for="message">
+                                            Wiadomość
+                                        </label>
+                                        <textarea placeholder="" name="message" rows="5"
+                                            class="form-control"></textarea>
+                                    </section>
+
+                                    <section class="form-group">
+
+                                        <section class="g-recaptcha"
+                                            data-sitekey="6Lek5ggUAAAAAP3G45UUCYA91zPifDfMpH1MCn1M"></section>
+
+                                    </section>
+                                    <button class="btn btn-dark mt-3" type="submit">
+                                        Wyślij
+                                        </button>
+                                    </form>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Olech-Service by Adam Kwiasowski&copy; 2021</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="fa.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
