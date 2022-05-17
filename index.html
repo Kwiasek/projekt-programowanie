@@ -20,6 +20,8 @@
 </head>
 
 <body>
+    <section id="loader"></section>
+    <section id="page">
     <!-- Nagłówek -->
     <header id="header">
         <i class="fas fa-car-side" id="car" style=" font-size: 4rem; color: var(--clr-secondary); text-align:left; position: absolute; bottom: 100px; left: 10px;"></i>
@@ -313,6 +315,7 @@
 
                     </section>
                 </section>
+            </section>
         </section>
 
         <!-- OLS Customs -->
@@ -342,6 +345,13 @@
                         <input type="checkbox" name="italic" id="italic"><br>
                         <label for="cursed">Przekreślony tekst</label>
                         <input type="checkbox" name="cursed" id="cursed">
+                    </form>
+
+                    <form id="formularz" onsubmit="Oblicz()">
+                        <label for="obliczenie">Wprowadź liczbę: </label>
+                        <input type="text" name="obliczenie" id="obliczenie" required>
+                        <button type="button" id="oblicz">Oblicz</button>
+                        <p id="wynik"></p>
                     </form>
                 </section>
             </section>
@@ -434,7 +444,7 @@
     <footer>
         <p>Olech-Service by Adam Kwiasowski&copy; 2021</p>
     </footer>
-
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
